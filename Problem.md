@@ -1,60 +1,49 @@
-#the pseudocode for the following three C problems:
-Problem 1: Display student information using different data types.
-SOLUTION:
-#include <stdio.h>
+# Lab 03 — Pseudocode Problems
 
-int main() 
-{
-    // Variable Declarations
-    int id = 1234;
-    char joey = 'J';     
-    float gpa = 3.8;
-    int age = 18;
-
-   //student ID
-    printf("ID of the student: %d\n", id); 
-    printf("Enter new ID: ");
-    scanf("%d", &id);                   
-
-  //GPA
-    printf("GPA of student: %.1f\n", gpa); 
-    printf("Enter new GPA: ");
-    scanf("%f", &gpa);                     
-
-  //Age
-    printf("Age of student: %d\n", age);  
-    printf("Enter new Age: ");
-    scanf("%d", &age);                    
-
-    
-}
-
-
-# Problem 2: Read and display a character using getchar() and putchar()
+## Problem 1: Display student information using different data types
 ```text
-Solution :
 START
+    DECLARE integer variable student_id = 1234
+    DECLARE character variable student_char = 'J'
+    DECLARE float variable student_gpa = 3.8
+    DECLARE integer variable student_age = 18
     
-    CREATE character variable user_input
+    OUTPUT "ID of the student: ", student_id
+    OUTPUT "Character value: ", student_char
+    OUTPUT "GPA of student: ", student_gpa
+    OUTPUT "Age of student: ", student_age
     
-   
-    PRINT "Enter any single character: "
+    OUTPUT "Enter new ID: "
+    INPUT student_id
     
-   
-    user_input = CALL getchar()
+    OUTPUT "Enter new GPA: "
+    INPUT student_gpa
     
-   
- PRINT "You entered: "
-    CALL putchar(user_input)
+    OUTPUT "Enter new Age: "
+    INPUT student_age
 END
+```
 
-# Problem 3: Display a floating-point value using different precision settings
-Solution
+## Problem 2: Read and display a character using getchar() and putchar()
+```text
 START
+    DECLARE character variable user_input
     
-    CREATE float variable precise_value = 3.14159265
-    PRINT precise_value formatted with 2 decimal places (%.2f)
-    PRINT precise_value formatted with 4 decimal places (%.4f)
-    PRINT precise_value formatted with default decimal places (%f)
+    OUTPUT "Enter any single character: "
+    user_input = CALL FUNCTION getchar()
+    
+    OUTPUT "You entered: "
+    CALL FUNCTION putchar(user_input)
 END
+```
 
+## Problem 3: Display a floating-point value using different precision settings
+```text
+START
+    DECLARE float variable precise_value = 3.14159265
+    
+    OUTPUT precise_value with 2 decimal places precision
+    OUTPUT precise_value with 4 decimal places precision
+    OUTPUT precise_value with default decimal places precision
+END
+```
